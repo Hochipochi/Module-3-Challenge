@@ -1,3 +1,4 @@
+var possibleCharacters = []
 // Array of special characters to be included in password
 var specialCharacters = [
   '@',
@@ -150,9 +151,18 @@ function getPasswordOptions() {
 
   return passwordOptions;
 }
-
+// Move if statements to prompt area if not working in generatePassword function
 function generatePassword() {
-  
+  if (hasSpecialCharacters === true) {
+    possibleCharacters.push(specialCharacters);
+  if (hasNumericCharacters === true) {
+    possibleCharacters.push(hasNumericCharacters);
+  if (hasLowercaseCharacters === true) {
+    possibleCharacters.push(hasLowercaseCharacters);
+  if (hasUppercaseCharacters === true) {
+    possibleCharacters.push(hasUppercaseCharacters);
+  }
+
   var options = getPasswordOptions();
   //Code Your logic Below
   // return "123456789"
