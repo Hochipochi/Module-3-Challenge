@@ -1,4 +1,6 @@
 var possibleCharacters = []
+var guaranteedCharacters = []
+//push 1 characters from each true statement into guaranteed
 // Array of special characters to be included in password
 var specialCharacters = [
   '@',
