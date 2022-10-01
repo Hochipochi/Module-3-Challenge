@@ -143,14 +143,16 @@ function getPasswordOptions() {
   var passwordOptions = {
     length: length,
     hasSpecialCharacters: hasSpecialCharacters,
-    //more options here
+    hasNumericCharacters: hasNumericCharacters,
+    hasLowercaseCharacters: hasLowercaseCharacters,
+    hasUppercaseCharacters: hasUppercaseCharacters,
   };
 
   return passwordOptions;
 }
 
 function generatePassword() {
-  // 2)
+  
   var options = getPasswordOptions();
   //Code Your logic Below
   // return "123456789"
